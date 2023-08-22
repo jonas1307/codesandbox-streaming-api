@@ -4,21 +4,21 @@ const router = express.Router();
 
 const song1 = new Song(
   1,
-  "XPTO",
-  "XPTO",
-  `${node.env.BASE_PATH}/music/song.mp3`
+  "Your Song",
+  "Elton John",
+  `${process.env.BASE_PATH}/files/your_song.mp3`
 );
 const song2 = new Song(
   2,
-  "XPTO",
-  "XPTO",
-  `${node.env.BASE_PATH}/music/song.mp3`
+  "Running up that hill",
+  "Kate Bush",
+  `${process.env.BASE_PATH}/music/running_up.mp3`
 );
 const song3 = new Song(
   3,
-  "XPTO",
-  "XPTO",
-  `${process.env.BASE_PATH}/music/song.mp3`
+  "Only Time",
+  "Enya",
+  `${process.env.BASE_PATH}/music/only_time.mp3`
 );
 
 const songs = [song1, song2, song3];
